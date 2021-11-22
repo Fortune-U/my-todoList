@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Roboto:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+
+}
+body{
+
+    background-image: linear-gradient(120deg, #ff6646 ,#d88771)  ;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.big-title{
+    font-size: 2em;
+    font-family: 'Lato', sans-serif;
+    color: #ffffff;
+    min-height: 20vh;   
+}
+
+form .todo-input{
+    width: 88%;
+    min-height: 5vh; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    outline: none;  
+    border: 1px solid black;
+    border-radius: 2px;
+    transition: 0.2s ease-in 0.1s;
+}
+.todo-input:focus{
+    border: 2px solid black;
+    border-radius: 3px;
+    padding-left: 4px;
+}
+
+form{
+    min-width: 40vw;
+    min-height: 5vh;
+    margin: 1em ;
+    
+}
+form .add-btn{
+    border: 1px solid #010c0d;
+    border-radius: 3px;
+}
+.add-btn{
+    background-color: #40425e;
+    color: #ffffff;
+    font-size: 1.5em;
+    min-height: 5vh;
+    min-width: 3.5vw;
+    transition: all  0.05s ease 0.07s;
+    
+}
+.add-btn:hover{
+background-color: #1e1f2b;
+cursor: pointer;
+
+}
+
+.todo{
+    display:flex;
+    list-style: none;
+    flex-direction: row; 
+}
+
+.todo-list{
+    margin: 5vh;
+}
+
+.todo-item{
+    min-width: 32vw;
+    min-height: 5vh;
+    font-size: 1.5em;
+    padding: 0.5rem 0.5rem;
+    margin: 6px;
+    background-color: #ffffff;
+    
+}
+
+.complete-btn{
+    background-color: #19cc49;
+    min-height: 3vh;
+    min-width: 3vw;
+}
+.trash-btn{
+    background-color: #ff0019;
+    min-height: 3vh;
+    min-width: 3vw;
+}
+
+.complete-btn, .trash-btn{
+    margin: 0.75em 0.75em;
+    color: #ffffff;  
+    transition: all  0.05s ease 0.07s;
+}
+
+.complete-btn:hover{
+    background-color: #07640f;
+cursor: pointer; 
+}
+
+.trash-btn:hover{
+    background-color: #7e0606;
+cursor: pointer;
+}
+
+.fa-trash,.fa-check{
+    pointer-events: none;
+}
+
+.completed{
+    opacity:0.5;
+    text-decoration: line-through;
+    color:black;
+}
