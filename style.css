@@ -120,3 +120,12 @@ cursor: pointer;
     text-decoration: line-through;
     color:black;
 }
+.fall{
+    display: flex;
+  transition: all 1s ease 0s;
+
+
+transform: scale(0.5);
+opacity: 0;
+}
+
