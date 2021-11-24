@@ -25,6 +25,7 @@ main{
 
 form .todo-input{
     width: 88%;
+    margin-right: 1em;
     min-height: 5vh; 
     font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
@@ -43,18 +44,23 @@ form{
     min-width: 40vw;
     min-height: 5vh;
     margin: 1em ;
+    display: flex;
     
+}
+.filter{
+    margin-left: 1em;
 }
 form .add-btn{
     border: 1px solid #010c0d;
     border-radius: 3px;
+    margin-left: -2em;
 }
 .add-btn{
     background-color: #40425e;
     color: #ffffff;
     font-size: 1.5em;
-    min-height: 5vh;
-    min-width: 3.5vw;
+    min-height: 3vh;
+    min-width: 2.5vw;
     transition: all  0.05s ease 0.07s;
     
 }
