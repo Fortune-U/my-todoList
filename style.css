@@ -78,7 +78,10 @@ cursor: pointer;
 
 .todo-list{
     margin: 5vh;
+    list-style-type: none;
+
 }
+
 
 .todo-item{
     min-width: 32vw;
@@ -87,7 +90,16 @@ cursor: pointer;
     padding: 0.5rem 0.5rem;
     margin: 6px;
     background-color: #ffffff;
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icons-wrapper{
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    margin-left: 10em;
+    pointer-events: none;
 }
 
 .complete-btn{
