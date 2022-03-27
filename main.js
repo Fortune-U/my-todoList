@@ -89,7 +89,7 @@ break;
 }
 
 function saveLocalTodos(todo){
-    let todos = [];
+    let todos;
 
     
 
