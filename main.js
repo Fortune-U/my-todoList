@@ -89,7 +89,7 @@ break;
 }
 
 function saveLocalTodos(todo){
-    let todos;
+    let todos = [];
 
     
 
@@ -108,7 +108,7 @@ function getTodos(todo){
     
 
    if(localStorage.getItem("todos") === 'null'){
-       todos = [""];
+       todos = [];
     }else{
        todos = JSON.parse(localStorage.getItem("todos"));
     }
