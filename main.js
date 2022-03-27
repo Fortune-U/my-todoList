@@ -103,8 +103,8 @@ function saveLocalTodos(todo){
     localStorage.setItem("todos", JSON.stringify(todos));
 }
 function getTodos(todo){
-    let todos = todo;
-    console.log(todos);
+    let todos;
+    
     
 
    if(localStorage.getItem("todos") === 'null'){
