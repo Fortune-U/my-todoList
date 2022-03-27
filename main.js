@@ -93,10 +93,10 @@ function saveLocalTodos(todo){
 
     
 
-   if(localStorage.getItem("todos") === 'null'){
-       todos = [];
+   if(localStorage.getItem("todos") !== 'null'){
+    todos = JSON.parse(localStorage.getItem("todos"));
     }else{
-       todos = JSON.parse(localStorage.getItem("todos"));
+       todos = [];
     }
 
     todos.push(todo);
@@ -107,11 +107,11 @@ function getTodos(todo){
     
     
 
-   if(localStorage.getItem("todos") === 'null'){
-       todos = [];
+   if(localStorage.getItem("todos") !== 'null'){
+    todos = JSON.parse(localStorage.getItem("todos"));
        
     }else{
-       todos = JSON.parse(localStorage.getItem("todos"));
+       todos = [];
     }
 
     todos.forEach(function(todo){
@@ -144,10 +144,10 @@ function removeLocalTodos(todo){
 
     
 
-   if(localStorage.getItem("todos") === 'null'){
-       todos = [];
+   if(localStorage.getItem("todos") !== 'null'){
+    todos = JSON.parse(localStorage.getItem("todos"));
     }else{
-       todos = JSON.parse(localStorage.getItem("todos"));
+       todos = [];
     }
 todoIndex =  todo.children[0].innerText;
  todos.splice(todos.indexOf(todoIndex),1);
